@@ -40,7 +40,7 @@ class App extends Component {
         <div className="posts">
           {posts.map(post =>
             <div className="post">
-              <img src={posts.cover} alt={posts.title} />
+              <img src={post.cover} alt={post.title} />
               <div key={post.id} className="post-content">
                 <h1>{post.title}</h1>
                 <p>{post.body}</p>
